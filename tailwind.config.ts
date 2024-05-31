@@ -8,9 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        public_sans: "var(--font-public_sans)",
+      },
+      boxShadow: {
+        lg: "0px 4px 18px 0px #4B465C1A;",
+      },
+      colors: {
+        editor: {
+          "primary-text": "#4B465C",
+          "button-hover": "#A8AAAE29",
+          gray: "#DBDADE",
+        },
       },
     },
   },

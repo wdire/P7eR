@@ -1,7 +1,9 @@
+import TextEditor from "./_components/text-editor";
+
 export default function Home() {
   return (
-    <main>
-      <p>Hello Piton Technology</p>
+    <main className="p-5">
+      <TextEditor />
     </main>
   );
 }

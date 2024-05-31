@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  @apply font-public_sans;
+}
+
+input,
+button,
+select {
+  @apply focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 font-public_sans;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1rem;
+}
+
+ol {
+  list-style: none;
+  counter-reset: item;
+}
+
+ol li {
+  counter-increment: item;
+  margin-bottom: 5px;
+}
+
+ol li:before {
+  margin-right: 0.5rem;
+  content: counter(item) ".";
+  text-align: right;
+}
