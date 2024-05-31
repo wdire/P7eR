@@ -21,6 +21,7 @@ const EditorButton = ({icon, onClick, active, disabled}: EditorButtonProps) => {
       disabled={disabled}
       onClick={onClick}
       onMouseDown={(e) => e.preventDefault()}
+      type="button"
     >
       <div className="w-6 h-6 stroke-editor-primary-text">{icon}</div>
     </button>

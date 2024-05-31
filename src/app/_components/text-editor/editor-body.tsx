@@ -3,8 +3,8 @@
 import {EDITOR_BODY} from "@/app/_helpers/constants";
 import React from "react";
 
-const EditorBody = React.forwardRef<HTMLDivElement, {defaultContent: string}>(function EditorBody(
-  {defaultContent = ""},
+const EditorBody = React.forwardRef<HTMLDivElement, {content: string}>(function EditorBody(
+  {content = ""},
   ref,
 ) {
   const handlePaste = (e: React.ClipboardEvent<HTMLDivElement>) => {
@@ -24,7 +24,7 @@ const EditorBody = React.forwardRef<HTMLDivElement, {defaultContent: string}>(fu
         fontFamily: "var(--font-public_sans)",
       }}
       contentEditable={"true"}
-      dangerouslySetInnerHTML={{__html: defaultContent}}
+      dangerouslySetInnerHTML={{__html: content}}
     ></div>
   );
 });
