@@ -13,7 +13,7 @@ body {
 input,
 button,
 select {
-  @apply focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 font-public_sans;
+  @apply focus:outline-none focus:ring-1 focus:ring-editor-primary focus:border-editor-primary font-public_sans;
 }
 
 ul {

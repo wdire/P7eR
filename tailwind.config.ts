@@ -14,8 +14,12 @@ const config: Config = {
       boxShadow: {
         lg: "0px 4px 18px 0px #4B465C1A;",
       },
+      spacing: {
+        "6.5": "26px",
+      },
       colors: {
         editor: {
+          primary: "#7367F0",
           "primary-text": "#4B465C",
           "button-hover": "#A8AAAE29",
           gray: "#DBDADE",
