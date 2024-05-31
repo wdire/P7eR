@@ -41,7 +41,7 @@ const PreviewForm = () => {
               <code>{formData.textEditor}</code>
             </div>
           </div>
-          <div className=" w-full sm:w-1/2 min-h-24 sm:pl-3 pt-3 sm:border-l border-t sm:border-t-0">
+          <div className=" w-full sm:w-1/2 min-h-24 sm:pl-3 pt-3 sm:pt-0 sm:border-l border-t sm:border-t-0">
             <div className="text-center font-medium mb-4">Live Output</div>
             <div dangerouslySetInnerHTML={{__html: formData.textEditor}}></div>
           </div>
